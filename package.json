@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start1": "babel-node src/index.js",
     "start": "nodemon src/index.js --exec babel-node",
+    "start2": "nodemon src/promise_index.js --exec babel-node",
     "build": "babel src -d distribution",
     "serve": "node distribution/index.js"
   },
@@ -22,6 +23,7 @@
   "dependencies": {
     "chalk": "^2.4.1",
     "commander": "^2.15.1",
-    "licham": "^1.1.0"
+    "licham": "^1.1.0",
+    "promise": "^8.0.1"
   }
 }
