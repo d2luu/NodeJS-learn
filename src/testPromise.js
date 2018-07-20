@@ -1,9 +1,9 @@
-const TestPromise = require('promise');
+const Promise = require('promise');
 
 module.exports = {
   buyAnIphone: (iphoneName) => {
-    return new TestPromise((fullfil, reject) => {
-      let isHappy = false;
+    let isHappy = true;
+    return new Promise((fullfil, reject) => {
       if (isHappy) {
         const phone = {name: iphoneName, color: "black"};
         fullfil(phone);
